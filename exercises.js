@@ -2,25 +2,40 @@
 
 function multiplyByTen(num) {
   //return num after multiplying it by ten
-  //code here
-}
+  var myNumber = num * 10;
+  return myNumber;
+  }
+multiplyByTen(53);
 
 function subtractFive(num) {
   //return num after subtracting five
-  //code here
+  var myNumber = num - 5;
+  return myNumber;
 }
+subtractFive(25);
 
 function areSameLength(str1, str2) {
   //return true if the two strings have the same length
   //otherwise return false
-  //code here
+  if (str1.length == str2.length) {
+    return true;
+  } else {
+    return false;
+  }
 }
+areSameLength('here I am','here U are');
+
 
 function areEqual(x, y) {
   //return true if x and y are the same
   //otherwise return false
-  //code here
+  if (x == y) {
+    return true;
+  } else {
+    return false;
+  }
 }
+areEqual('dog', 'dog');
 
 function lessThanNinety(num) {
   //return true if num is less than ninety
@@ -31,44 +46,70 @@ function lessThanNinety(num) {
 function greaterThanFifty(num) {
   //return true if num is greater than fifty
   //otherwise return false
-  //code here
+  if (num > 50) {
+    return true;
+  } else {
+    return false;
+  }
 }
+greaterThanFifty(35);
 
 function add(x, y) {
   //add x and y together and return the value
-  //code here
+  var sum = x + y;
+  return sum;
 }
+add(5,21);
 
 function subtract(x, y) {
   //subtract y from x and return the value
-  //code here
+  var difference = (x - y);
+  return difference;
 }
+subtract(100,20);
 
 function divide(x, y) {
   //divide x by y and return the value
-  //code here
+  var quotient = (y/x);
+  return quotient;
 }
+divide(25,5);
 
 function multiply(x, y) {
   //multiply x by y and return the value
-  //code here
+  var product =(x*y);
+  return product;
 }
+multiply(5,5);
 
 function getRemainder(x, y) {
   //return the remainder from dividing x by y
-  //code here
+  var quotient = (x%y);
+  return quotient;
 }
+getRemainder(20,4);
 
 function isEven(num) {
   //return true if num is even
   //otherwise return false
-  //code here
+  var myNumber = num % 2;
+    if (myNumber == 0){
+    return true;
+  } else {
+    return false;
+  }
 }
+isEven(5);
 
 function isOdd(num) {
   //return true if num is false
   //otherwise return false
-  //code here
+  var myNumber = num % 2;
+  if (myNumber != 0) {
+    return true;
+  } else {
+    return false;
+  }
 }
 
 function square(num) {
@@ -115,7 +156,7 @@ function getGreeting(name) {
 }
 
 //If you can't remember these area formulas then head over to Google or look at the test code.
- 
+
 function getRectangleArea(length, width) {
   //return the area of the rectangle by using length and width
   //code here
