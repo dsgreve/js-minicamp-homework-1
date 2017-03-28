@@ -40,8 +40,13 @@ areEqual('dog', 'dog');
 function lessThanNinety(num) {
   //return true if num is less than ninety
   //otherwise return false
-  //code here
+  if (num < 90){
+    return true;
+  } else {
+    return false;
+  }
 }
+lessThanNinety(70);
 
 function greaterThanFifty(num) {
   //return true if num is greater than fifty
@@ -70,7 +75,7 @@ subtract(100,20);
 
 function divide(x, y) {
   //divide x by y and return the value
-  var quotient = (y/x);
+  var quotient = (x/y);
   return quotient;
 }
 divide(25,5);
@@ -114,68 +119,89 @@ function isOdd(num) {
 
 function square(num) {
   //square num and return the new value
-  //code here
+  var myNumber = num * num;
+  return myNumber;
 }
+square(9);
 
 function cube(num) {
   //cube num and return the new value
-  //code here
+  var myNumber = (num * num)* num;
+  return myNumber;
 }
+cube(4);
 
 function raiseToPower(num, exponent) {
   //raise num to whatever power is passed in as exponent
-  //code here
+  var myPower = Math.pow(num, exponent);
+  return myPower;
 }
+raiseToPower(7, 2);
 
 function roundNumber(num) {
   //round num and return it
-  //code here
+  var myNumber = Math.round(num);
+  return myNumber;
 }
+roundNumber(2.8);
 
 function roundUp(num) {
   //round num up and return it
-  //code here
+  var myNumber = Math.ceil(num);
+  return myNumber;
 }
+roundUp(2.1);
 
 function addExclamationPoint(str) {
   //add an exclamation point to the end of str and return the new string
   //'hello world' -> 'hello world!'
-  //code here
+  var myText = str + '!';
+  return myText;
 }
+addExclamationPoint('hello world');
 
 function combineNames(firstName, lastName) {
   //return firstName and lastName combined as one string and separated by a space.
   //'Lambda', 'School' -> 'Lambda School'
-  //code here
+  return firstName + ' ' + lastName;
 }
+combineNames('Dale', 'Greve');
 
 function getGreeting(name) {
   //Take the name string and concatenate other strings onto it so it takes the following form:
   //'Sam' -> 'Hello Sam!'
-  //code here
+  var myGreeting = 'Hello ' + name + '!';
+  return myGreeting;
 }
+getGreeting('Sam');
 
 //If you can't remember these area formulas then head over to Google or look at the test code.
 
 function getRectangleArea(length, width) {
   //return the area of the rectangle by using length and width
-  //code here
+  return length * width;
 }
+getRectangleArea(5,10);
 
 function getTriangleArea(base, height) {
   //return the area of the triangle by using base and height
-  //code here
+  return (base * height)/2;
 }
+getTriangleArea(25,16);
 
 function getCircleArea(radius) {
   //return the rounded area of the circle given the radius
-  //code here
+  var myCircle = 3.14 * (radius * radius);
+  return Math.round(myCircle);
 }
+getCircleArea(100);
 
 function getRectangularPrismVolume(length, width, height) {
   //return the volume of the 3D rectangular prism given the length, width, and height
-  //code here
+  return length * width * height;
 }
+getRectangularPrismVolume(10,25,25);
+
 
 //Do not modify code below this line.
 ////--------------------------------

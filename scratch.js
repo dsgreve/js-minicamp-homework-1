@@ -1,8 +1,9 @@
-function multiplyByTen(num) {
-  //return num after multiplying it by ten
-  var myNumber = num * 5;
-  return myNumber;
-  }
-var value = multiplyByTen(10);
+function addExclamationPoint(str) {
+  //add an exclamation point to the end of str and return the new string
+  //'hello world' -> 'hello world!'
+  var myText = 'hello world' + str;
+  console.log(myText);
+  return myText;
+}
 
-console.log(value);
+addExclamationPoint('!');
